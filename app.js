@@ -2,9 +2,9 @@ const express = require("express");
 const hbs = require("express-handlebars");
 const bodyParser = require("body-parser");
 const fs = require("fs");
+const words = require("./db/words.json");
 
 const server = express();
-const words = require("./db/words.json");
 
 // console.log(words);
 // console.log(typeof words);
