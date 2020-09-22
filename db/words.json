@@ -1,0 +1,14 @@
+[
+  {
+    "word": "ctrl + C",
+    "description": "コピーをする"
+  },
+  {
+    "word": "ctrl + X",
+    "description": "削除をする"
+  },
+  {
+    "word": "ctrl + D",
+    "description": "複製をする"
+  }
+]

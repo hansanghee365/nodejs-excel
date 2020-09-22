@@ -1,0 +1,30 @@
+<div class="ui main text container">
+    <h1 class="ui header">追加</h1>
+    <form action="/add" method="POST">
+        <div class="ui input fluid">
+            <input type="text" placeholder="key" name="word" />
+        </div>
+        <div class="ui input fluid">
+            <input type="text-area" placeholder="description" name="description" />
+        </div>
+        <button class="ui secondary button" type="submit" style="width: 100%;">
+            ADD
+        </button>
+    </form>
+    <table class="ui selectable inverted table">
+        <thead>
+            <tr>
+                <th>key</th>
+                <th>description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each words}}
+            <tr>
+                <td class="main-center">{{this.word}}</td>
+                <td>{{this.description}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
